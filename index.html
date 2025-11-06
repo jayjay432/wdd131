@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - JOSEPH</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Joseph Lawrence</title>
+    <meta name="author" content="Joseph Lawrence">
+    <meta name="description" content="WWD 131 - Dynamic Web Fundamentals">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- javascript file -->
+     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - JOSEPH</h1>
+    <header>
+        <h1 id="course-title">
+            WDD 131 - Dynamic Web Fundamentals - <span>Joseph V. Lawrence</span>
+        </h1>
+
+        <nav class="navigation">
+            <ul class="nav-link">
+                <li><a href="www.linkedin.com" class="nav-item">Linkedin</a></li>
+                <li><a href="https://byupw.instructure.com/" class="nav-item">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" class="nav-item">Scripture</a></li>
+                <li><a href="www.linkedin.com" class="nav-item">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="card about-me">
+            <h2>
+                About Me
+            </h2>
+            <div class="about-me__info">
+                <p>
+                    Hello! My name is Joseph Lawrence. I am currently a student at BYU-Pathway studying Web Development and Design. I have a background in IT and Cybersecurity, but I have always had a passion for web development. I am excited to learn more about dynamic web fundamentals in this course and to apply these skills in my future career.
+                </p>
+                <img class="profile-picture" src="images/profile-picture.webp" alt="a picture of joseph lawrence">
+            </div>
+            <div class="country-info">
+                <div class="country-flag__name">
+                    <h3>Ogun-State, Nigeria</h3>
+                </div>
+                <div class="country-flag__info">
+                    <img src="images/nigeria-flag.jpeg" alt="country-flag" class="country-flag">
+                    <p>Nigeria is a country located in West Africa, bordered by Benin to the west, Niger to the north, Chad to the northeast, and Cameroon to the east, with the Atlantic Ocean along its southern coast. It is the most populous country in Africa, home to over 200 million people who belong to more than 250 ethnic groups, including the Hausa, Yoruba, and Igbo. Nigeria is known for its rich cultural heritage, colorful festivals, and diverse languages. The country has a long and complex history, from ancient kingdoms such as Benin and Oyo to its colonial past under British rule and eventual independence in 1960.</p>
+                </div>
+            </div>
+        </section>
+       
+        <section class="card dev-resources">
+            <h2>Web Dev Resources</h2>
+            <ul class="resources-list">
+                <li class="resources-list-item"><a href="#">Dev to Community</a></li>
+                <li class="resources-list-item"><a href="#">Smashing Magazine</a></li>
+                <li class="resources-list-item"><a href="#">CSS Tricks</a></li>
+                <li class="resources-list-item"><a href="#">W3 Schools</a></li>
+                <li class="resources-list-item"><a href="#"> Udemy </a></li>
+                <li class="resources-list-item"><a href="#">Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="copywrite-year">2023</span> | Joseph Victor Lawrence | Ogun State</p>
+        <p id="lastModified"></p>    
+    </footer>
 </body>
 </html> 
