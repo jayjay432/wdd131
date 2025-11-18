@@ -27,6 +27,7 @@ button.addEventListener('click', function () {
 
 
 deleteButton.addEventListener('click', function () {
+    //code to execute when the delete button is clicked
   list.removeChild(li);
   input.focus();
 });

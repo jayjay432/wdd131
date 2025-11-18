@@ -1,0 +1,55 @@
+@media screen and (min-width: 768px){
+    body {
+        max-width: 1200px;
+        width: 100%;
+        padding: 1rem auto;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 4rem;
+    }
+
+    header div {
+        grid-column: 1 / 2;
+    }
+
+    nav {
+        visibility: visible;
+        display: block !important;
+    }
+
+    nav.open {
+        display: block;
+        position: static;
+        grid-column: 2 / 3;
+    }
+
+    nav ul {
+        position: static;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2rem;
+        background: none;
+    }
+
+    nav ul li {
+        padding: 0;
+        flex-direction: row;
+        background: none;
+    }
+
+    nav ul li:hover {
+        background-color: var(--color-taupe);
+        cursor: pointer;
+        color: var(--color-nav-background);
+        padding: 0 2rem;
+    }
+
+    /* Hide hamburger open/close */
+    header .show-menu::after,
+    header .remove-menu::after {
+        content: "";
+    }
+
+}
