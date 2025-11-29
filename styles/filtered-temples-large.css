@@ -2,7 +2,6 @@
     body {
         max-width: 1200px;
         width: 100%;
-        padding: 1rem auto;
     }
     header {
         display: grid;
